@@ -1,33 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event 2025 Resources</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 20px;
-      background: #f4f4f4;
-    }
-    h1 { color: #333; }
-    .doc-link {
-      display: block;
-      margin: 10px auto;
-      padding: 12px 20px;
-      width: 200px;
-      background: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .doc-link:hover { background: #0056b3; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARPCCO | Event Resources</title>
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1d2480; /* Dark blue */
+            --secondary-color: #f3f4f6; /* Light gray */
+            --footer-color: #1d2480; /* Dark blue for footer */
+            --hover-color: #FFD700; /* Gold for hover */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--secondary-color);
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem 1rem;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .center-text h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .center-text .full-name {
+            display: block;
+        }
+
+        .center-text .short-name {
+            display: none;
+        }
+
+        /* Flags Container */
+        .flags-container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+            background-color: #fff;
+        }
+
+        .flags-container img {
+            height: 30px;
+            width: auto;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .doc-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .doc-button:hover {
+            background-color: var(--hover-color);
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
+
+            .center-text h1 {
+                font-size: 1.5rem;
+            }
+
+            .container h2 {
+                font-size: 2rem;
+            }
+
+            .doc-button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+
+            .flags-container img {
+                height: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+
+            .center-text h1 {
+                font-size: 1.4rem;
+            }
+
+            .center-text .full-name {
+                display: none;
+            }
+
+            .center-text .short-name {
+                display: block;
+            }
+
+            .flags-container img {
+                height: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Event 2025 Resources</h1>
-   <a href="https://docs.google.com/document/d/1z25rmUw-Inz4pHL1oWCNdXJeRqJN4puk/edit?usp=sharing&ouid=111977842415949271756&rtpof=true&sd=true" class="doc-link">Timetable</a>
-  <a href="https://drive.google.com/file/d/13cbA0nTIq-ENnNlV9YnHK_OPf3yXvanq/view?usp=sharing" class="doc-link">Event Guide</a>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <!-- Left Logo -->
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/90" alt="Left Logo" class="logo mr-3">
+            </div>
+            <!-- Center Text -->
+            <div class="flex-1 text-center center-text">
+                <h1>
+                    <span class="full-name">SOUTHERN AFRICAN REGIONAL POLICE CHIEFS COOPERATION ORGANIZATION</span>
+                    <span class="short-name">SARPCCO</span>
+                </h1>
+            </div>
+            <!-- Right Logo -->
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/90" alt="Right Logo" class="logo ml-3">
+            </div>
+        </div>
+    </header>
+
+    <!-- Flags Container -->
+    <div class="flags-container">
+        <img src="https://flagcdn.com/ao.svg" alt="Angola Flag">
+        <img src="https://flagcdn.com/bw.svg" alt="Botswana Flag">
+        <img src="https://flagcdn.com/km.svg" alt="Comoros Flag">
+        <img src="https://flagcdn.com/sz.svg" alt="Eswatini Flag">
+        <img src="https://flagcdn.com/ls.svg" alt="Lesotho Flag">
+        <img src="https://flagcdn.com/mg.svg" alt="Madagascar Flag">
+        <img src="https://flagcdn.com/mw.svg" alt="Malawi Flag">
+        <img src="https://flagcdn.com/ma.svg" alt="Mauritius Flag">
+        <img src="https://flagcdn.com/zm.svg" alt="Mozambique Flag">
+        <img src="https://flagcdn.com/na.svg" alt="Namibia Flag">
+        <img src="https://flagcdn.com/sc.svg" alt="Seychelles Flag">
+        <img src="https://flagcdn.com/za.svg" alt="South Africa Flag">
+        <img src="https://flagcdn.com/tz.svg" alt="Tanzania Flag">
+        <img src="https://flagcdn.com/zm.svg" alt="Zambia Flag">
+        <img src="https://flagcdn.com/zw.svg" alt="Zimbabwe Flag">
+        <img src="https://flagcdn.com/cd.svg" alt="Democratic Republic of the Congo Flag">
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h2>Event Resources</h2>
+            <div class="buttons-container">
+                <a href="https://docs.google.com/document/d/1z25rmUw-Inz4pHL1oWCNdXJeRqJN4puk/edit?usp=sharing&ouid=111977842415949271756&rtpof=true&sd=true" class="doc-button">Timetable</a>
+                <a href="https://drive.google.com/file/d/13cbA0nTIq-ENnNlV9YnHK_OPf3yXvanq/view?usp=sharing" class="doc-button">Event Guide</a>
+                <a href="https://docs.google.com/document/d/1z25rmUw-Inz4pHL1oWCNdXJeRqJN4puk/edit?usp=sharing&ouid=111977842415949271756&rtpof=true&sd=true" class="doc-button">Venue Map</a>
+                <a href="https://drive.google.com/file/d/13cbA0nTIq-ENnNlV9YnHK_OPf3yXvanq/view?usp=sharing" class="doc-button">Presentations</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Southern African Regional Police Chiefs Cooperation Organization</p>
+    </footer>
 </body>
 </html>
